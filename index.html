@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevQuiz | Teste seus conhecimentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Dev<span>Quiz</span></h1>
+            <p>Teste seus conhecimentos em programação.</p>
+        </header>
+
+        <section id="inicio" class="tela">
+            <h2>Bem-vindo ao DevQuiz!</h2>
+            <p>Escolha uma categoria e desafie seus conhecimentos.</p>
+
+            <div class="categorias">
+                <button class="categoria" data-categoria="HTML">HTML</button>
+                <button class="categoria" data-categoria="CSS">CSS</button>
+                <button class="categoria" data-categoria="JavaScript">JavaScript</button>
+                <button class="categoria" data-categoria="Lógica">Lógica</button>
+            </div>
+
+            <button id="start-button" class="principal">
+                Começar Quiz
+            </button>
+        </section>
+
+        <section id="quiz-container" class="tela escondida">
+
+            <div class="quiz-topo">
+                <span id="categoria-atual">HTML</span>
+                <span id="progresso"></span>
+            </div>
+
+            <div class="barra">
+                <div id="barra-progresso"></div>
+            </div>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas"></div>
+
+            <button id="proxima" class="principal escondida">
+                Próxima pergunta
+            </button>
+
+        </section>
+
+        <section id="resultado" class="tela escondida">
+            <h2>Quiz finalizado!</h2>
+            <p>Sua pontuação:</p>
+
+            <div id="pontuacao"></div>
+
+            <p id="mensagem-final"></p>
+
+            <button id="reiniciar" class="principal">
+                Jogar novamente
+            </button>
+        </section>
+
+        <footer>
+            <p>DevQuiz • Aprenda programação de forma divertida.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
